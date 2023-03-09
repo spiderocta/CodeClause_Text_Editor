@@ -14,6 +14,9 @@ public class Editor extends JFrame implements ActionListener {
 
         textArea = new JTextArea();
         textArea.setPreferredSize(new Dimension(750, 550));
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
+
         this .add(textArea);
         this.setVisible(true);
         //to center the window on lunch
